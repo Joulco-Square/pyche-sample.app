@@ -1,0 +1,30 @@
+{
+  "ServerConfig": {
+    "ServerName": "sample.websitehostserver.xyz",
+    "ServerAlias": "sample.com",
+    "ServerAdmin": "admin@sample.com"
+  },
+  "ErrorConfig": {
+    "LogLevel": "warn",
+    "ErrorLog": "sample_error.log",
+    "CustomLog": "sample_access.log"
+  },
+  "AppConfig": {
+    "AppName": "sample"
+  },
+  "SSLConfig": {
+    "RedirectPermanent": true,
+    "Domains": [
+      {
+        "DomainName": "sample.websitehostserver.xyz",
+        "Type": "letsencrypt",
+        "CertificateInstalled": true
+      },
+      {
+        "DomainName": "sample.com",
+        "Type": "letsencrypt",
+        "CertificateInstalled": false
+      }
+    ]
+  }
+}

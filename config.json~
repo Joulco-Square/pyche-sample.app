@@ -1,0 +1,30 @@
+{
+  "ServerConfig": {
+    "ServerName": "landstory.websitehostserver.xyz",
+    "ServerAlias": "map.landstory.africa",
+    "ServerAdmin": "admin@joulco2.com"
+  },
+  "ErrorConfig": {
+    "LogLevel": "warn",
+    "ErrorLog": "landstory_error.log",
+    "CustomLog": "landstory_access.log"
+  },
+  "AppConfig": {
+    "AppName": "landstory"
+  },
+  "SSLConfig": {
+    "RedirectPermanent": false,
+    "Domains": [
+      {
+        "DomainName": "landstory.websitehostserver.xyz",
+        "Type": "letsencrypt",
+        "CertificateInstalled": true
+      },
+      {
+        "DomainName": "map.landstory.africa",
+        "Type": "letsencrypt",
+        "CertificateInstalled": true
+      }
+    ]
+  }
+}
